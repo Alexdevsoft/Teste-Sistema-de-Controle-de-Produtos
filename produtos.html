@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Produtos</title>
+    <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="stylesheet" href="./src/css/produtos.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-brand">Controle de produtos</div>
+        <ul class="nav-links">
+            <li><a href="#">Voltar</a></li>
+        </ul>
+        <button class="nav-toggler" aria-label="Toggle navigation">&#9776;</button>
+    </nav>
+    <div class="container">
+        <div>
+            <button id="btn-adicionar" type="button">Criar</button>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>quantity</th>
+                        <th>Valor</th>
+                        <th>Data de Cadastro</th>
+                        <th>ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal" id="cadastro-produto">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Produto</h4>
+                    <button type="button" class="close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert esconder">
+                        <button type="button" class="close">&times;</button>
+                        <span id="mensagem">Por favor, preencha todos os campos!</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="codigo">Código</label>
+                        <input id="codigo" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input id="nome" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="quantidade">Quantidade</label>
+                        <input id="quantidade" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="valor">Valor</label>
+                        <input id="valor" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="data">Data cadastro</label>
+                        <input id="data" type="date">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="btn-salvar" type="button">Salvar</button>
+                    <button id="btn-sair" type="button">Sair</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/js/Produto.js"></script>
+    <script src="./src/js/credenciais.js"></script>
+    <script src="./src/js/base.js"></script>
+    <script src="./src/js/produtos.js"></script>
+</body>
+</html>
