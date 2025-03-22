@@ -109,3 +109,62 @@ table th {
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
 }
+
+.modal-header h4 {
+    margin: 0;
+}
+
+.modal-header .close {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.modal-body .form-group {
+    margin-bottom: 15px;
+}
+
+.modal-body label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-body input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.modal-footer button {
+    margin-left: 10px;
+}
+
+.alert {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alert .close {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.esconder {
+    display: none;
+}
