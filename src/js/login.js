@@ -2,6 +2,7 @@ var form = {
     email: document.querySelector("#email"),
     senha: document.querySelector("#senha"),
     btnEntrar: document.querySelector("#btn-entrar")
+
 };
 
 form.btnEntrar.addEventListener('click', (e) => {
@@ -13,6 +14,7 @@ form.btnEntrar.addEventListener('click', (e) => {
     if (!email || !senha) {
         mostarAlerta("Informe usuário e senha, os campos não podem ser brancos.");
         return;
+
     } else if (email.toLowerCase() != usuarioValido.email || senha != usuarioValido.senha) {
         mostarAlerta("E-mail ou senha inválidos");
         return;
@@ -22,5 +24,6 @@ form.btnEntrar.addEventListener('click', (e) => {
 });
 
 function efetuarLogin() {
-    window.open(`produtos.html?teste=123`, '_self');
+    window.location.href = `produtos.html?teste=123`;
+
 }
